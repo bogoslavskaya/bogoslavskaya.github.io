@@ -22,7 +22,7 @@
   </style>
   <body>
     <p>
-      this is a sample HTML page. <a href="target.html">A sample link<a>
+      this is a sample HTML page. <a id="link" href="target.html">A sample link<a>
     </p>
     <form class="red border" action="thank_you.html" method="get">
       <p>
@@ -35,5 +35,9 @@
     <div class="wrapper">
       <button id="button" type="button" name="button">Sample Button</button>
     </div>
+      <script>
+       var link = window.document.getelementbyid('link')
+       link.text.content = 'modified text'
+      </script>
   </body>
 </html>
