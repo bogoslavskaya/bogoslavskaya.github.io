@@ -82,8 +82,11 @@ ga('send', 'pageview')
         link.addEventListener('click', listener);
         </script>
        <script>
-        var blackbutton = window.document.getElementById('button')
-        ga('send', 'event', 'blackbutton click', 'blackbutton click action')
+        var bluebutton = window.document.getElementById('button')
+        var listener = function (event) {
+        event.preventDefault()
+        ga('send', 'event', 'bluebutton click', 'bluebutton click action')
+        )
         button.addEventListener('click', listener);
         </script>
       </body>
