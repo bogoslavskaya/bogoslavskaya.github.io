@@ -84,8 +84,11 @@ ga('send', 'pageview')
         </script>
       <script>
       var WhiteButton = window.document.getElementById(‘button’)
+      var listener = function (event) {
+          event.preventDefault()
       ga('send', 'event', 'WhiteButton click', 'WhiteButton click action')
+      }
     button.addEventListener('click', listener);
-        </script>
+               </script>
       </body>
 </html>
