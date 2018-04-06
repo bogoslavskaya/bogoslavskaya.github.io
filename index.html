@@ -66,7 +66,7 @@ link.addEventListener('click', listener)
           var idInput = document.getElementById('input2')
           var id = idInput.value
           if (name.length > 0 && id.length > 0) {
-            ga('send', 'event', 'form delivery', 'from delivery action')
+            ga('send', 'event', 'form delivery', 'form delivery action')
             window.location.href="/thank_you.html?name=" + name + "&id=" + id
           }
         }
@@ -74,14 +74,5 @@ link.addEventListener('click', listener)
         formElement.addEventListener('submit', listener);
         
       </script>
-       <script>
-        var button = window.document.getElementsById('button')
-          var listener = function (event) {
-          event.preventDefault()
-           ga('send', 'event', 'button click', 'button click action')
-        }
-         formElement.addEventListener('button', listener);
-        
-      </script>
-  </body>
+      </body>
 </html>
