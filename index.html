@@ -11,11 +11,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-116991702-1', 'auto');
-ga('set','page', '/test1.html')
 ga('send', 'pageview')
-ga('set', 'hostname', 'google.com')
-ga('set','page', '/analytics.html')
-ga('send', 'pageview');
    </script>
 <!-- End Google Analytics -->
   </head>
@@ -60,5 +56,23 @@ var listener = function (event) {
 }
 link.addEventListener('click', listener)
          </script>
+       <script>
+        var allForms = window.document.getElementsByTagName('form')
+        var formElement = allForms[0]
+        var listener = function (event) {
+          event.preventDefault()
+          var nameInput = document.getElementById('input1')
+          var name = nameInput.value
+          var idInput = document.getElementById('input2')
+          var id = idInput.value
+          if (name.length > 0 && id.length > 0) {
+            ga('send', 'event', 'form delivery', 'from delivery action')
+            window.location.href="/thank_you.html?name=" + name + "&id=" + id
+          }
+        }
+        
+        formElement.addEventListener('submit', listener);
+        
+      </script>
   </body>
 </html>
