@@ -81,5 +81,14 @@ ga('send', 'pageview')
           }
         link.addEventListener('click', listener);
         </script>
+        <script>
+        var bluebutton = window.document.getElementById('button')
+        var listener = function (event) {
+          event.preventDefault()
+           ga('send', 'event', 'bluebutton click', 'bluebutton click action')
+           window.location.href="/"
+          }
+        button.addEventListener('click', listener);
+        </script>
             </body>
 </html>
