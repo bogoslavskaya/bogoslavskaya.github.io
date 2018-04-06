@@ -67,7 +67,7 @@ ga('send', 'pageview')
         var Link = window.document.getElementById('link')
         var listener = function (event) {
           event.preventDefault()
-           ga('send', 'event', 'form delivery', 'form delivery action')
+           ga('send', 'event', 'link click', 'link click action')
            window.location.href="/thank_you.html"
           }
         formElement.addEventListener('click', listener);
