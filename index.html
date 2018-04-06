@@ -12,11 +12,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-116991702-1', 'auto');
 ga('send', 'pageview');
-  ga('send', {
-  hitType: 'event',
-  eventCategory: 'link',
-  eventAction: 'click',
-  });
 </script>
 <!-- End Google Analytics -->
   </head>
@@ -60,6 +55,11 @@ var listener = function (event) {
   output.textContent = 'I was clicked'
 }
 link.addEventListener('click', listener)
+          ga('send', {
+  hitType: 'event',
+  eventCategory: 'link',
+  eventAction: 'click',
+  });
        </script>
   </body>
 </html>
