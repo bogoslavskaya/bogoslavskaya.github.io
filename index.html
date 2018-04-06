@@ -75,9 +75,13 @@ link.addEventListener('click', listener)
         
       </script>
        <script>
-        var sampleButton = window.document.getElementById('button')
-        ga('send', 'event', 'button click', 'button click action')
-        button.addEventListener('click', listener);
+        var Link = window.document.getElementById('link')
+        var listener = function (event) {
+          event.preventDefault()
+           ga('send', 'event', 'form delivery', 'form delivery action')
+           window.location.href="/thank_you.html"
+          }
+        formElement.addEventListener('click', listener);
         </script>
       </body>
 </html>
