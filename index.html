@@ -74,5 +74,14 @@ link.addEventListener('click', listener)
         formElement.addEventListener('submit', listener);
         
       </script>
+       <script>
+        var button = window.document.getElementsById('button')
+          var listener = function (event) {
+          event.preventDefault()
+           ga('send', 'event', 'button click', 'button click action')
+        }
+         formElement.addEventListener('button', listener);
+        
+      </script>
   </body>
 </html>
