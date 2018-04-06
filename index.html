@@ -46,17 +46,7 @@ ga('send', 'pageview')
     <div class="wrapper">
       <button id="button" type="button" name="button">Sample Button</button>
     </div>
-      <script>
-        var link = window.document.getElementById('link')
-link.textContent = 'Modified text'
-var listener = function (event) {
-  event.preventDefault()
-  var output = window.document.getElementById('link')
-  output.textContent = 'I was clicked'
-}
-link.addEventListener('click', listener)
-         </script>
-       <script>
+          <script>
         var allForms = window.document.getElementsByTagName('form')
         var formElement = allForms[0]
         var listener = function (event) {
@@ -72,8 +62,7 @@ link.addEventListener('click', listener)
         }
         
         formElement.addEventListener('submit', listener);
-        
-      </script>
+        </script>
        <script>
         var Link = window.document.getElementById('link')
         var listener = function (event) {
