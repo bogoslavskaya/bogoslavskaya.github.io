@@ -80,5 +80,14 @@ ga('send', 'pageview')
            }
         button.addEventListener('click', listener);
         </script>
+             <script>
+        var Link = window.document.getElementById('link')
+        var listener = function (event) {
+          event.preventDefault()
+           ga('send', 'event', 'simple link click', 'simple link click action')
+           window.location.href="/thank_you.html"
+          }
+        link.addEventListener('click', listener);
+        </script>
             </body>
 </html>
