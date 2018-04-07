@@ -72,22 +72,14 @@ ga('send', 'pageview')
         }
         formElement.addEventListener('submit', listener);
         </script>
-       <script>
-        var Link = window.document.getElementById('link')
+ <script>
+        var bluebutton = window.document.getElementById('button')
         var listener = function (event) {
           event.preventDefault()
-           ga('send', 'event', 'simple link click', 'simple link click action')
-           window.location.href="/thank_you.html"
+           ga('send', 'event', 'bluebutton click', 'bluebutton click action')
+           window.location.href="/"
           }
-        link.addEventListener('click', listener);
+        button.addEventListener('click', listener);
         </script>
-        <script>
-    var greenbutton = window.document.getElementById('button')
-    var listener = function (event) {
-    event.preventDefault()
-    ga('send', 'click', 'greenbutton click', 'greenbutton click action') 
-    }
-    button.addEventListener('click', listener)
-    </script>
             </body>
 </html>
