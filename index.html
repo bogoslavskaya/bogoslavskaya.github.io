@@ -72,10 +72,14 @@ ga('send', 'pageview')
         }
         formElement.addEventListener('submit', listener);
         </script>
-        <script>
-        var wbutton = window.document.getElementById('button')
-            ga('send', 'event', 'wbutton click', 'wbutton click action')
-                           </script>
+         <script>
+-        var sbutton = window.document.getElementById('button')
+-        var listener = function (event) {
+-          event.preventDefault()
+-           ga('send', 'event', 'sbutton click', 'sbutton click action')
+-           }
+-        button.addEventListener('click', listener);
+-        </script>
              <script>
         var Link = window.document.getElementById('link')
         var listener = function (event) {
