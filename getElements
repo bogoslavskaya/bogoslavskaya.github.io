@@ -1,0 +1,23 @@
+//getElementById - поиск элемента по его id 
+<script>
+  var Link = window.document.getElementById('link')
+  var listener = function (event) {
+  event.preventDefault()
+  ga('send', 'event', 'link click', 'link click action')
+  }
+  link.addEventListener('click', listener);
+</script>
+
+//getElementsByTagName
+   <script>
+  var allPar = window.document.getElementsByTagName('p');
+  var num = allPar.length
+  alert("There are " + num + " paragraph in this document");
+    }
+  </script>
+ 
+ //document.getElementsByClassName
+ 
+ //getElementsByName
+ 
+ 
