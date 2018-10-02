@@ -18,13 +18,10 @@ function setAlteredPageAndSend() {
  ga('send', 'pageview')
       }
       
- function simpleSend() {
- ga('send', 'pageView')
-      }
       
- function setAltered() {
+/* function setAltered() {
  ga('set', 'page', 'another_altered_page.html')
-      }
+      }*/
       
  function sendEvent() {
  ga('send', 'event', 'my_category', 'button_click', 'small_button')
@@ -114,9 +111,7 @@ function setAlteredPageAndSend() {
     }
   </script>
        <div>
-    <button onclick="simpleSend()"> Send pageview </button> <br>
     <button onclick="setAlteredPageAndSend()"> Alter Page path and send page view </button> <br>
-    <button onclick="setAltered()"> Alter page path</button> <br>
     <button onclick="sendEvent()"> Send event </button>
     </div>
             </body>
