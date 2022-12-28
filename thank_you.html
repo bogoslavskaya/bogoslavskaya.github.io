@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-   <!-- Google Tag Manager -->
+<head>
+ <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -9,15 +9,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-MGHVPMW');</script>
 <!-- End Google Tag Manager -->
 
-    <meta charset="utf-8">
-    <title>Sample thank you page</title>
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
+  <meta charset="utf-8">
+  <title>Sample thank you page</title>
+</head>
+<body>
+
+dataLayer.push(   {
+event: "purchase",
+gtm: {uniqueEventId: 1},
+ecommerce: {
+  purchase: {
+    actionField: {id: "13215", revenue: "204"},
+    products: [
+      {
+        id: "1536",
+        name: "Знак аварийный ЗА 001 (СN 237012/109RT001) картонная" +
+              " упаковка",
+        quantity: "3",
+        price: "68"
+      },
+      {}
+    ]
+  }
+}
+}
+  )
+  <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGHVPMW"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <h1>Your form was just submitted</h1>
-    <p>No data were processed<p>
-  </body>
+  <h1>Your form was just submitted</h1>
+  <p>No data were processed<p>
+</body>
 </html>
